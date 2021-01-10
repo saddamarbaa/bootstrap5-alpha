@@ -10,10 +10,51 @@
 :root {
   --yellow: #ffee88;
   --white: #fff;
-  --size: 1.5;
-  --size2: 0.8rem;
+  --size: 1.5rem;
+  --size2: 1rem;
   --size3: 3rem;
   --boldness: 800;
   --borderTop: 1px solid #fff;
   --borderBottom: 1px solid #fff;
+}
+
+/********** Overwriting Bootsstrap **********/
+
+.navbar {
+  border-bottom: var(--borderBottom);
+}
+
+.container-fluid {
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-fluid .navbar-brand {
+  text-decoration: none;
+  color: var(--yellow);
+  font-size: var(--size);
+  font-weight: var(--boldness);
+  display: flex;
+  flex: 0.1;
+  background-color: blue;
+}
+
+.navbar-toggler {
+  background-color: var(--yellow);
+}
+
+#navbarTogglerDemo01 .nav-link {
+  color: var(--white);
+  font-size: var(--size2);
+}
+
+.navbar-collapse .navbar-nav {
+  background-color: red;
+  /* flex: 0.5; */
+}
+
+body {
+  height: 1000px;
 }
