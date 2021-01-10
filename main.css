@@ -10,12 +10,18 @@
 :root {
   --yellow: #ffee88;
   --white: #fff;
+  --black: #000;
+  --grey: grey;
   --size: 1.5rem;
   --size2: 1rem;
   --size3: 3rem;
   --boldness: 800;
   --borderTop: 1px solid #fff;
   --borderBottom: 1px solid #fff;
+}
+
+body {
+  padding-top: 70px;
 }
 
 /********** Overwriting Bootsstrap **********/
@@ -38,7 +44,6 @@
   font-weight: var(--boldness);
   display: flex;
   flex: 0.1;
-  background-color: blue;
 }
 
 .navbar-toggler {
@@ -50,11 +55,78 @@
   font-size: var(--size2);
 }
 
-.navbar-collapse .navbar-nav {
-  background-color: red;
-  /* flex: 0.5; */
+form > .form-control {
+  width: 200px;
 }
 
-body {
-  height: 1000px;
+.navbar-nav {
+  flex: 0.4;
+}
+
+/********** content-container **********/
+
+.content-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+  background-color: var(--black);
+  display: flex;
+  flex: 1.5;
+}
+
+.card-container {
+  background-color: var(--grey);
+  display: flex;
+  flex: 2;
+  border-top: var(--borderTop);
+}
+
+main h1 {
+  --yellow: #bff000;
+  color: var(--yellow);
+  margin-top: 40px;
+}
+
+main > p {
+  color: var(--grey);
+}
+
+.icons {
+  width: 15%;
+  height: 10%;
+  margin-top: 30px;
+}
+
+.icons > i {
+  font-size: var(--size3);
+  color: var(--white);
+}
+
+.card-body {
+  background-color: var(--grey);
+}
+
+.table {
+  width: 30vw;
+  color: var(--white);
+}
+
+.footer {
+  width: 100%;
+  color: var(--yellow);
+  display: flex;
+  flex: 0.2;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(42, 42, 42);
+  border: var(--borderTop);
+}
+
+.footer > h5 {
+  font-size: var(--size2);
 }

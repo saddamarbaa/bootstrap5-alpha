@@ -1,0 +1,104 @@
+:root {
+  --yellow: #ffee88;
+  --white: #ffffff;
+  --size: 1.5rem;
+  --size2: 0.8rem;
+  --size3: 3rem;
+  --boldness: 800;
+  --borderTop: 1px solid #ffffff;
+  --borderBottom: 1px solid #ffffff;
+  --borderBottom: 1px solid #ffffff;
+}
+
+.navbar {
+  border-bottom: var(--borderBottom);
+}
+
+.container-fluid {
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-fluid .navbar-brand {
+  text-decoration: none;
+  color: var(--yellow);
+  font-size: var(--size);
+  font-weight: var(--boldness);
+  display: flex;
+  flex: 0.1;
+}
+
+.navbar-toggler {
+  background-color: var(--yellow);
+}
+
+#navbarTogglerDemo01 .nav-link {
+  font-size: var(--size2);
+  color: var(--white);
+}
+
+.content-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex: 1.5;
+}
+
+.card-container {
+  background-color: gray;
+  display: flex;
+  flex: 2;
+  border-top: var(--borderTop);
+}
+
+form form-control {
+  /* some code  */
+}
+
+@media (max-width: 768px) {
+  main > h1 {
+    --yellow: #fbf000;
+    color: var(--yellow);
+    margin-top: 40px;
+  }
+}
+
+main > p {
+  color: gray;
+}
+
+.icons {
+  width: 15px;
+  height: 10%;
+  margin-top: 30px;
+}
+
+.icons i {
+  font-size: var(--size);
+  clear: var(--white);
+}
+
+.card-body {
+  background-color: gray;
+}
+
+.table {
+  width: 30vw;
+}
+
+.footer {
+  width: 100%;
+  color: var(--yellow);
+  display: flex;
+  flex: 0.2;
+  justify-content: center;
+}
