@@ -9,6 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+  <!-- Connect to CDN font-awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
   <!-- the Main CSS File -->
   <link rel="stylesheet" href="main.css">
 
@@ -17,24 +23,26 @@
 <body>
 
   <!-- Start Navigation Bar Section -->
-  <div class="boy-container">
-    <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light bg-secondary navbar-dark bg-dark">
+
+  <div class="body-container">
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light bg-secondary 
+    navbar-dark bg-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Hidden brand</a>
+          <a class="navbar-brand" href="#">Bootstrap 5</a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -44,6 +52,21 @@
         </div>
       </div>
     </nav>
+
+    <!-- End Navigation Bar Section -->
+
+    <div class="content-container">
+      <main class="main">
+        <h1>Welcome To Our Bootstrap Success Coaching Call </h1>
+        <p>Let`s Learn Some Bootstrap 5 and CSS Variable</p>
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </main>
+    </div>
+
   </div>
 
 
