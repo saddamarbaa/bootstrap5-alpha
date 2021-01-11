@@ -18,6 +18,13 @@
   --boldness: 800;
   --borderTop: 1px solid #fff;
   --borderBottom: 1px solid #fff;
+  --bs-orange: #fd7e14;
+  --bs-cyan: #0dcaf0;
+  --bs-gradient: linear-gradient(
+    to right,
+    rgba(31, 25, 25, 0.644),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 body {
@@ -26,8 +33,11 @@ body {
 
 /********** Overwriting Bootsstrap **********/
 
+/**********  Navigation Bar **********/
+
 .navbar {
   border-bottom: var(--borderBottom);
+  background-color: var(--bs-gradient);
 }
 
 .container-fluid {
@@ -39,7 +49,7 @@ body {
 
 .container-fluid .navbar-brand {
   text-decoration: none;
-  color: var(--yellow);
+  color: var(--bs-orange);
   font-size: var(--size);
   font-weight: var(--boldness);
   display: flex;
@@ -63,7 +73,7 @@ form > .form-control {
   flex: 0.4;
 }
 
-/********** content-container **********/
+/********** Main content-container **********/
 
 .content-container {
   width: 100%;
@@ -77,13 +87,6 @@ main {
   background-color: var(--black);
   display: flex;
   flex: 1.5;
-}
-
-.card-container {
-  background-color: var(--grey);
-  display: flex;
-  flex: 2;
-  border-top: var(--borderTop);
 }
 
 main h1 {
@@ -107,18 +110,31 @@ main > p {
   color: var(--white);
 }
 
-.card-body {
-  background-color: var(--grey);
-}
+/********** success coach table **********/
 
 .table {
   width: 30vw;
   color: var(--white);
 }
 
+/********** card-container **********/
+
+.card-container {
+  background-color: var(--grey);
+  display: flex;
+  flex: 2;
+  border-top: var(--borderTop);
+}
+
+.card-body {
+  background-color: var(--grey);
+}
+
+/********** card-container **********/
+
 .footer {
   width: 100%;
-  color: var(--yellow);
+  color: var(--bs-cyan);
   display: flex;
   flex: 0.2;
   justify-content: center;
@@ -129,4 +145,32 @@ main > p {
 
 .footer > h5 {
   font-size: var(--size2);
+}
+
+/********** Start Media Queries(Add a Breakpoint) **********/
+
+@media (max-width: 375px) {
+  main p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  main h1 {
+    max-width: 375px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .icons i {
+    margin: 20px;
+    font-size: var(--size) !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
